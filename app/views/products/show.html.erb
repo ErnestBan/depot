@@ -15,19 +15,19 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @product.description %>
+  <%= sanitize(@product.description) %>
 </p>
 
 
 <p>
   <strong>Image url:</strong>
-  <%= @product.image_url %>
+  <%= image_tag(@product.image_url) %>
 </p>
 
 
 <p>
   <strong>Price:</strong>
-  <%= @product.price %>
+  <%= number_to_currency(@product.price) %>
 </p>
 
 
