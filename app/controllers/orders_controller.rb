@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  # skip_before_action :authorize
+  skip_before_action :authorize, only: [:new, :create]
   include CurrentCart
   before_action :set_cart, only: [:new, :create]
   # key new method os the ensure_cart_isnt_empty 
@@ -82,5 +84,5 @@ class OrdersController < ApplicationController
     if @cart.line_items.empty?
     redirect_to store_index_url, notice: 'Your cart is empty'
     end
-  end    
+    end    
 end
