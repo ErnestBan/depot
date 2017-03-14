@@ -28,7 +28,7 @@ Product.create(title: 'Hot & Sour Soup',
 Product.create(title: 'Kung Pao Chicken',
   description:
     %{<p>
-      <em>This Szechuan-inspired chicken dish is spicy, slightly sweet and incredibly delicious.
+      <This Szechuan-inspired chicken dish is spicy, slightly sweet and incredibly delicious.
       </p>},
   image_url: '1.jpg',
   price: 6.99)
