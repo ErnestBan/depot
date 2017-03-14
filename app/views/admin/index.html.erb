@@ -1,3 +1,7 @@
-<h1>Welcome</h1>
-It's <%= Time.now %>
-We have <%= pluralize(@total_orders, "order") %>.
+<div class="alert alert-success">
+  <strong>Welcome!</strong> 
+</div>
+<div class="panel panel-primary">
+<div class="panel-heading">Time is now:<%= Time.now %></div>
+<div class="panel-body">You have <%= pluralize(@total_orders, "order") %>.</div>
+</div>

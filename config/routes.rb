@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  get 'static_pages/help'
+
  get 'admin' => 'admin#index'
  controller :sessions do
  get 'login' => :new
